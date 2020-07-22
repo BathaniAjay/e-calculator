@@ -189,5 +189,6 @@ input:checked + .slider:before {
     box-shadow: none;
   }
   .calculator .calculator-body {
-    padding:0;
+    paddingt:0;
+    padding-top:10px;
 }
