@@ -11,6 +11,43 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+   <script>
+    
+    var soundwav = new Audio();
+    var soundmp3 = new Audio();
+  soundwav.src = "http://www.soundjay.com/button/beep-07.wav";
+  
+  soundmp3.src = "http://www.soundjay.com/button/beep-07.wav"
+
+  function calculate(data) {
+  
+  
+  soundmp3.play();
+  soundwav.play();
+  
+  switch(data){
+
+    case 'AC':
+      input.innerHTML="";
+      output.innerHTML="0";
+      // sound();
+      break;
+      case 'C':
+        input.innerHTML=input.innerHTML.substr(0,input.innerHTML.length -1);
+        output.innerHTML=  math.evaluate(input.innerHTML) === undefined ? 0:math.evaluate(input.innerHTML);
+        // sound();
+        break;
+      case '=':
+        output.innerHTML = math.evaluate(input.innerHTML);
+        // sound();
+        break;
+    default:
+        input.innerHTML +=data;
+        // sound();
+        break;
+  }
+}
+  </script>
   
 </head>
 <body>
