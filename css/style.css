@@ -186,5 +186,6 @@ input:checked + .slider:before {
   .calculator {
     height: 100vh;
     width: 100vw;
+    box-shadow: none;
   }
 }
