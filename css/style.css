@@ -178,6 +178,12 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 900px) {
+  body
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
   .conatiner{
     flex-direction: column;
     height: 100vh;
