@@ -186,9 +186,8 @@ input:checked + .slider:before {
   .calculator {
     height: 100vh;
     width: 100vw;
-    box-shadow: none;
+    
   }
-  .calculator .calculator-body {
-/*     paddingt:0;
-    padding-top:10px; */
+ .calculator .calculator-body {
+  overflow: hidden;
 }
