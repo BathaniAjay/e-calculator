@@ -196,6 +196,7 @@ input:checked + .slider:before {
   }
  .calculator .calculator-body {
    row-gap: 0;
+    column-gap: 0;
     padding: 0;
     padding-top: 10px;
   overflow: hidden;
